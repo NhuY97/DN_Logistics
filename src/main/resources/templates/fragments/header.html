@@ -1,26 +1,36 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="header">
-    <meta charset="UTF-8" />
 </head>
 <body>
 <header class="site-header">
     <nav class="navbar navbar-default fixed-top">
         <div class="header-inner">
             <div class="container">
-                <div class="row">
+                <div class="row row-header">
                     <div class="col-md-12">
-                        <div class="brand"><a href="#">
-                            <h1>Logo</h1>
+                        <div class="brand"><a th:href="@{/}">
+                            <img class="img-responsive" th:src="@{/assets/dn-logo.jpg}" alt="Duy Nhan Logistics"/>
                         </a></div>
-                        <nav id="nav-wrap" class="main-nav"><a id="toggle-btn" href="#"><i class="fa fa-bars"></i> </a>
+                        <nav id="nav-wrap" class="main-nav">
+
+                            <a id="toggle-btn" href="#"><i class="fa fa-bars"></i> </a>
                             <ul class="sf-menu">
-                                <li class="current"><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">About Us </a></li>
-                                <li><a href="products.html">Products</a></li>
-                                <li><a href="exports.html">Exports</a></li>
-                                <li><a href="clients.html">Clients</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li class="current"><a th:text="#{header.label.home}" th:href="@{/home}">Home </a></li>
+                                <li><a th:text="#{header.label.about_us}" th:href="@{/about-us}">About Us</a></li>
+                                <li><a th:text="#{header.label.service}" th:href="@{/service}">Service</a></li>
+                                <li><a th:text="#{header.label.news}" th:href="@{/news}">News</a></li>
+                                <li><a th:text="#{header.label.contact}" th:href="@{/contact}">Contact</a></li>
+                                <li>
+                                    <div class="btn-group">
+                                        <button id="btn-change-lang" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span id="btn-icon" ></span>
+                                        </button>
+                                        <div class="dropdown-menu" style=" min-width: 30px;padding: 0px 5px;">
+                                            <a id="link-change-lang" class="dropdown-item" style="color: #363f44;"><span id="btn-icon-second"></span></a>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </nav>
                     </div>

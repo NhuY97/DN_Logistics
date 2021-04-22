@@ -11,7 +11,7 @@ body {
     -webkit-font-smoothing: antialiased;
     line-height: 1.53846154;
     padding-top: 90px;
-    background-color: #E8CEBF;
+    background-color: #fff;
 }
 :focus { outline: 0 none !important; }
 h1, h2, h3, h4, h5, h6 {
@@ -109,9 +109,9 @@ ul { padding-left:0; }
     position: relative;
     text-transform: capitalize;
 }
-.main-nav .sf-menu li.current a { color: #424E75; }
-.main-nav .sf-menu li.current ul a { color: #424E75; }
-.main-nav .sf-menu li ul li.current a { color: #424E75; }
+.main-nav .sf-menu li.current a { color: #424E75; text-decoration: underline;}
+.main-nav .sf-menu li.current ul a { color: #424E75; text-decoration: underline;}
+.main-nav .sf-menu li ul li.current a { color: #424E75; text-decoration: underline;}
 .main-nav .sf-menu ul {
     background-color: #fff;
     position: absolute;

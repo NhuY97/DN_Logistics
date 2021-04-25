@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body th:fragment="form-email-section">
+
+<div class="mt-5 mb-5 text-center">
+    <h1 class="display-5 fw-bold"><span>LIÊN HỆ</span></h1>
+</div>
+
+    <div class="contact row justify-content-center">
+        <div class="col-md-5 col-sm-10">
+            <div class="form-area">
+                <form>
+                    <div class="group form-group">
+                        <input type="text" class="form-control" id="name" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Name</label>
+                    </div>
+                    <div class="group form-group">
+                        <input type="mail" class="form-control" id="email" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                    </div>
+                    <div class="form-group group">
+                        <input type="text" class="form-control" id="phone" name="phone" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Phone</label>
+                    </div>
+                    <div class="form-group group">
+                        <div class="text-group">
+                            <textarea required="required" class="form-control" rows="6"></textarea>
+                            <label for="textarea" class="input-label">Message</label><i class="bar"></i>
+                        </div>
+                    </div>
+                    <button type="button" id="submit" name="submit" class="btn btn-primary col-md-12 mb-5">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-10">
+            <h1 class="align-content-center">DUY NHAN LOGISTICS luôn mang tới sự hài lòng cho Quý khách hàng</h1>
+            <p class="lead align-content-center">“Cám ơn Quý khách hàng đã quan tâm tới dịch vụ của DUY NHAN LOGISTICS. <br />Chúng tôi sẽ liên hệ lại Quý khách hàng trong thời gian sớm nhất. <br />Vui lòng liên hệ ngay với chúng tôi qua hotline: +84 906768646 qua Skype/Zalo để được tư vấn trực tiếp.”</p>
+        </div>
+    </div>
+
+</body>
+</html>

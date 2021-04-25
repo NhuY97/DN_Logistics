@@ -3,99 +3,139 @@
 <head>
 </head>
 <body th:fragment="service-section">
-	<div class="row justify-content-center mt-3">
-		<div class="col-md-10 mt-2">
-			<div class="card">
-				<div class="card-horizontal">
-					<div class="img-square-wrapper">
-						<img class="card-img" 
-							width="300px" 
-							height="180px"
-							th:src="@{/assets/pd.png}"
-							alt="Thủ tục hải quan">
-					</div>
-					<div class="card-body">
-						<h4 class="card-title"><span style="color:#0FB3F2">THỦ TỤC</span> <span style="color:#CF3835">HẢI QUAN</span></h4>
-						<p class="card-text" style="color:#272727">Cung cấp dịch vụ khai Hải quan cho tất cả mặt hàng được cấp phép xuất nhập khẩu. Đặc biệt lợi thế trong các mặt hàng: Hoá chất, phụ gia thực phẩm, thực phẩm, thiết bị, máy móc công nghệ cao.</p>
-						<a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-md-10 mt-2">
-			<div class="card">
-				<div class="card-horizontal">
-					<div class="card-body">
-						<h4 class="card-title"><span style="color:#0FB3F2">VẬN TẢI</span> <span style="color:#CF3835">ĐƯỜNG BIỂN</span></h4>
-						<p class="card-text" style="color:#272727">Vận tải đường biển là một trong những khâu quan trọng trong quá trình vận tải đa phương thức. Để cung cấp cho khách hàng dịch vụ tốt nhất, Duy Nhân phụ trách cả 2 mảng FCL và FCL.</p>
-						<a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
-					</div>
-					<div class="img-square-wrapper">
-						<img class="card-img" 
-							width="300px" 
-							height="180px"
-							th:src="@{/assets/st.png}"
-							alt="Thủ tục hải quan">
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-md-10 mt-2">
-			<div class="card">
-				<div class="card-horizontal">
-					<div class="img-square-wrapper">
-						<img class="card-img" 
-							th:src="@{/assets/plane.png}"
-							alt="Thủ tục hải quan">
-					</div>
-					<div class="card-body">
-						<h4 class="card-title"><span style="color:#0FB3F2">VẬN TẢI</span> <span style="color:#CF3835">ĐƯỜNG HÀNG KHÔNG</span></h4>
-						<p class="card-text" style="color:#272727">Vận tải hàng không là lựa chọn hàng đầu đối với những lô hàng gấp, có khối lượng nhỏ bởi tính ưu việt trong thời gian vận chuyển.</p>
-						<a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
-					</div>
-				</div>
-			</div>
-		</div>
-				
-		<div class="col-md-10 mt-2">
-			<div class="card">
-				<div class="card-horizontal">
-					<div class="card-body">
-						<h4 class="card-title"><span style="color:#0FB3F2">VẬN TẢI</span> <span style="color:#CF3835">TRUCKING NỘI ĐỊA</span></h4>
-						<p class="card-text" style="color:#272727">Hầu hết chuỗi vận tải hoàn chỉnh đều bao gồm vận tải nội địa ở hai đầu nước xuất khẩu và nhập khẩu. Duy Nhân tích hợp cả hai dịch vụ vận tải và logistics, trong đó bao gồm cả vận tải nội địa.</p>
-						<a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
-					</div>
-					<div class="img-square-wrapper">
-						<img class="card-img" 
-							width="300px" 
-							height="180px"
-							th:src="@{/assets/truck.png}"
-							alt="Thủ tục hải quan">
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-md-10 mt-2">
-			<div class="card">
-				<div class="card-horizontal">
-					<div class="img-square-wrapper">
-						<img class="card-img" 
-							width="300px" 
-							height="180px"
-							th:src="@{/assets/ft.png}"
-							alt="Thủ tục hải quan">
-					</div>
-					<div class="card-body">
-						<h4 class="card-title"><span style="color:#0FB3F2">NHẬP KHẨU</span> <span style="color:#CF3835">THỰC PHẨM</span></h4>
-						<p class="card-text" style="color:#272727">Bằng đội ngũ nhân viên trẻ được đào tạo chuyên nghiệp, năng động đã có những bước phát triển không ngừng trong việc cung cấp các mặt hàng thực phẩm đông lạnh nhập khẩu tốt nhất, sạch nhất đến tận tay người tiêu dùng với các nhóm sản phẩm chính: Thịt bò, thịt heo, thịt gà...</p>
-						<a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="px-4 py-5 text-center">
+    <h1 class="display-5 fw-bold animate__animated animate__pulse">GIỚI THIỆU</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Thành lập năm 2019, Công ty TNHH Thương Mại Dịch Vụ Vận Tải Duy Nhân là một Forwarding cung
+            cấp tất cả dịch vụ Cước vận tải, Khai báo Hải Quan, Logistics nội địa và quốc tế. <br /> Ngoài ra, chúng tôi cũng
+            là một nhà cung ứng thực phẩm, thịt đông lạnh nhập khẩu uy tín hàng đầu.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="#gui-bao-gia"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3 mr-2">Gửi báo giá</button></a>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4 ml-2">Liên hệ</button>
+        </div>
+    </div>
+</div>
+
+<div class="mt-5 text-center">
+    <h1 class="display-5 fw-bold"><span>SẢN PHẨM DỊCH VỤ</span></h1>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-10 mt-2">
+        <div class="card">
+            <div class="card-horizontal">
+                <div class="img-square-wrapper">
+                    <img class="card-img"
+                         width="300px"
+                         height="180px"
+                         th:src="@{/assets/pd.png}"
+                         alt="Thủ tục hải quan">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"><span style="color:#0FB3F2">THỦ TỤC</span> <span style="color:#CF3835">HẢI QUAN</span>
+                    </h4>
+                    <p class="card-text" style="color:#272727">Cung cấp dịch vụ khai Hải quan cho tất cả mặt hàng được cấp phép xuất nhập khẩu. Đặc biệt lợi thế trong các mặt hàng: Hoá chất, phụ gia thực phẩm, thực phẩm, thiết bị, máy móc công nghệ cao.
+                        Duy Nhân với đội ngũ nhân viên trẻ được đào tạo nghiệp vụ chuyên sâu, có nhiều kinh nghiệm xử lý tình huống trong ngành vận tải hàng hóa. Chúng tôi rất tự tin có thể cung cấp cho khách hàng dịch vụ khai thuê hải quan tốt nhất với thời gian thông quan nhanh nhất.
+                        <br />Tất cả tờ khai hải quan được kiểm soát bởi chuyên viên chứng từ hải quan trước khi truyền tờ khai chính thức. Chúng tôi luôn cập nhật tình trạng lô hàng một cách nhanh chóng, chính xác và kịp thời cho khách hàng qua điện thoại, email…trong suốt quá trình làm hải quan cho đến khi giao hàng.
+                        Bộ phận khai hải quan của chúng tôi rất sẵn sàng tư vấn cho khách hàng về thủ tục hải quan, mã HS, chứng từ xuất nhập khẩu cần thiết, hỗ trợ xin giấy phép của các cơ quan chuyên ngành, ấn định thuế và hoàn thuế….
+                    </p>
+                    <a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-10 mt-2">
+        <div class="card">
+            <div class="card-horizontal">
+                <div class="card-body">
+                    <h4 class="card-title"><span style="color:#0FB3F2">VẬN TẢI</span> <span style="color:#CF3835">ĐƯỜNG BIỂN</span>
+                    </h4>
+                    <p class="card-text" style="color:#272727">Vận tải đường biển là một trong những khâu quan trọng trong quá trình vận tải đa phương thức. Để cung cấp cho khách hàng dịch vụ tốt nhất, Duy Nhân phụ trách cả 2 mảng FCL và FCL.
+                        Với sự linh hoạt và phạm vi rộng của dịch vụ cước vận tải đường biển chúng tôi mang đến cho khách hàng sự lựa chọn kinh tế hơn những nhà cung cấp dịch vụ vận tải khác. Với phương thức vận chuyển đa dạng, chúng tối cung cấp không chỉ là từ cảng đến cảng, mà còn là chuỗi cung ứng logistics đầy đủ từ kho đến kho.
+                        <br />Duy Nhân đã thiết lập mối quan hệ thân thiết với hầu hết các hãng tàu quốc tế và nội địa đảm bảo có thể cung cấp cho khách hàng giá cước cạnh tranh nhất.
+                        Dịch vụ vận tải đường biển của chúng tôi bao gồm:
+                        </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#10050; Vận chuyển hàng FCL và LCL (Xuất khẩu, nhập khẩu)
+                        </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#10050; Vận chuyển hàng quá tải, quá khổ (Open Top, Flat Rack…)
+                        </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#10050; Gom hàng lẻ
+                    </p>
+                    <a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
+                </div>
+                <div class="img-square-wrapper">
+                    <img class="card-img"
+                         width="300px"
+                         height="180px"
+                         th:src="@{/assets/st.png}"
+                         alt="Thủ tục hải quan">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-10 mt-2">
+        <div class="card">
+            <div class="card-horizontal">
+                <div class="img-square-wrapper">
+                    <img class="card-img"
+                         th:src="@{/assets/plane.png}"
+                         alt="Thủ tục hải quan">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"><span style="color:#0FB3F2">VẬN TẢI</span> <span style="color:#CF3835">ĐƯỜNG HÀNG KHÔNG</span>
+                    </h4>
+                    <p class="card-text" style="color:#272727">Vận tải hàng không là lựa chọn hàng đầu đối với những lô hàng gấp, có khối lượng nhỏ bởi tính ưu việt trong thời gian vận chuyển.
+                        Những mặt hàng nhạy cảm và có giá trị cao thường phải chịu áp lục rất lớn về thời gian cho tất cả các bên liên quan. <br />Chính vì vậy, Bộ phận vận tải bằng đường hàng không của chúng tôi cung cấp giá cước của nhiều hãng bay, hỗ trợ tìm kiếm sân bay và vận chuyển hàng quá khổ.
+                        Dịch vụ bao gồm cả vận chuyển Express - Chuyển phát nhanh quốc tế. Chúng tôi sẽ đánh gía đúng yêu cầu của quý khách hàng và đảm bảo rằng quý công ty sẽ nhận được giải pháp vận chuyển hàng không hiệu quả nhất.
+                    </p>
+                    <a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-10 mt-2">
+        <div class="card">
+            <div class="card-horizontal">
+                <div class="card-body">
+                    <h4 class="card-title"><span style="color:#0FB3F2">VẬN TẢI</span> <span style="color:#CF3835">TRUCKING NỘI ĐỊA</span>
+                    </h4>
+                    <p class="card-text" style="color:#272727">Hầu hết chuỗi vận tải hoàn chỉnh đều bao gồm vận tải nội địa ở hai đầu nước xuất khẩu và nhập khẩu. Duy Nhân tích hợp cả hai dịch vụ vận tải và logistics, trong đó bao gồm cả vận tải nội địa.
+                        <br />Sở hữu mội đội xe bao gồm nhiều xe tải và xe đầu kéo, chúng tôi cung cấp giá cả cạnh tranh cùng với dịch vụ vận tải nội địa đáng tin cậy trong toàn lãnh thổ Việt Nam.
+                    </p>
+                    <a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
+                </div>
+                <div class="img-square-wrapper">
+                    <img class="card-img"
+                         width="300px"
+                         height="180px"
+                         th:src="@{/assets/truck.png}"
+                         alt="Thủ tục hải quan">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-10 mt-2" id="gui-bao-gia">
+        <div class="card">
+            <div class="card-horizontal">
+                <div class="img-square-wrapper">
+                    <img class="card-img"
+                         width="300px"
+                         height="180px"
+                         th:src="@{/assets/ft.png}"
+                         alt="Thủ tục hải quan">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"><span style="color:#0FB3F2">NHẬP KHẨU</span> <span style="color:#CF3835">THỰC PHẨM</span>
+                    </h4>
+                    <p class="card-text" style="color:#272727">Ngoài ra, Duy Nhân còn là đại lý hàng đông lạnh nhập khẩu cho các hãng thực phẩm lớn. Bằng đội ngũ nhân viên trẻ được đào tạo chuyên nghiệp, năng động đã có những bước phát triển không ngừng trong việc cung cấp các mặt hàng thực phẩm đông lạnh nhập khẩu tốt nhất, sạch nhất đến tận tay người tiêu dùng với các nhóm sản phẩm chính: Thịt bò, thịt heo, thịt gà...
+                        <br />Vừa là công ty vận chuyển, cùng với CHÂM NGÔN Sức khỏe khách hàng là hàng đầu, mang lại cho khách hàng những thực phẩm bỗ dưỡng, đảm bảo vệ sinh an toàn thực phẩm cao nhất với giá thành tốt nhất và một dịch vụ giao hàng nhanh nhất.
+                    </p>
+                    <a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

@@ -4,14 +4,16 @@
       xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Duy Nhan Logistics</title>
+    <title>Duy Nhan Logisticsasdfasf1231231231231</title>
     <link rel="shortcut icon" type="image/x-icon" th:href="@{/assets/fast.png}" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/header.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/slide.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/section.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/footer.css}">
     <link rel="stylesheet" type="text/css" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css}">
     <link rel="stylesheet" type="text/css" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/animate.min.css}">
 </head>
 
 <body>
@@ -21,6 +23,10 @@
 <div class="container" th:insert="fragments/slide.html :: slide"> </div>
 
 <div class="container-fluid" th:insert="fragments/service-section.html :: service-section"> </div>
+
+<div class="container-fluid" th:insert="fragments/form-email-section.html :: form-email-section"> </div>
+
+<footer th:insert="fragments/footer.html :: footer"> </footer>
 
 <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
 <script th:src="@{/js/bootstrap.min.js}"></script>

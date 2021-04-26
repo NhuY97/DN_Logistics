@@ -4,7 +4,7 @@ body, html {
     position: relative;
 }
 body {
-    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: gothamRounded, system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 13px;
     color: #666666;
     font-weight:500;
@@ -307,4 +307,35 @@ ul { padding-left:0; }
             text-align: left;
         }
     }
+}
+
+
+
+/** font **/
+@font-face {
+    font-family: gothamRounded;
+    src: url('../fonts/GothamRoundedRegular.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: gothamRounded;
+    src: url('../fonts/GothamRoundedLight.otf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: gothamRounded;
+    src: url('../fonts/GothamRoundedMedium.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: gothamRounded;
+    src: url('../fonts/GothamRoundedBold.otf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+.font-gotham-rounded {
+    font-family: gothamRounded;
 }

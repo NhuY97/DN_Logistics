@@ -3,11 +3,13 @@
 }
 .card {
     border: none;
+    border-radius: 0px;
+    border-bottom: 1px dotted #0c5460;
 }
 .card-horizontal {
     display: flex;
     flex: 1 1 auto;
-    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: gothamRounded, system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 .card-title {
 	font-size: 24px;

@@ -18,6 +18,12 @@
 
 <body>
 
+<div th:if="${sendUserInfoResult != null}">
+    <script>
+        window.location.href = "#gui-bao-gia";
+    </script>
+</div>
+
 <header th:insert="fragments/header.html :: header"> </header>
 
 <div class="container" th:insert="fragments/slide.html :: slide"> </div>

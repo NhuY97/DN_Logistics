@@ -44,7 +44,7 @@
 
         <div class="col-md-5 col-sm-10">
             <div th:switch="${sendUserInfoResult}">
-                <h1 th:case="2000" class="align-content-center text-success">Quý khách vừa gửi báo giá thành công, chúng tôi sẽ liên hệ với Quý khách sớm nhất có thể</h1>
+                <h1 th:case="2000" class="align-content-center text-success">Quý khách vừa gửi báo giá thành công</h1>
                 <h1 th:case="1001" class="align-content-center text-warning">Quý khách vừa gửi dữ liệu sai định dạng, vui lòng kiểm tra và gửi lại!</h1>
                 <h1 th:case="1002" class="align-content-center text-warning">Hệ thống đang bảo trì, xin lỗi quý khách về sự bất tiện này!</h1>
                 <h1 th:case="*" class="align-content-center">Chúng tôi luôn mang tới sự hài lòng cho Quý khách hàng</h1>

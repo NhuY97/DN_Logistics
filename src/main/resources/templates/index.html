@@ -24,6 +24,18 @@
     </script>
 </div>
 
+<div th:if='${"2000" == sendEmailInfoResult}'>
+    <script>
+        alert("Đăng ký email thành công!")
+    </script>
+</div>
+
+<div th:if='${sendEmailInfoResult != null && "2000" != sendEmailInfoResult}'>
+    <script>
+        alert("Đăng ký email thất bại!")
+    </script>
+</div>
+
 <header th:insert="fragments/header.html :: header"> </header>
 
 <div class="container" th:insert="fragments/slide.html :: slide"> </div>

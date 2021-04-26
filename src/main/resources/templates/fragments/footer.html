@@ -3,9 +3,9 @@
 <head th:fragment="footer">
 </head>
 <body>
-<footer class="footer-distributed align-content-center" id="lien-he">
+<footer class="row footer-distributed align-content-center" id="lien-he">
 
-    <div class="footer-left">
+    <div class="footer-left col-12 col-lg-4 col-md-4 col-sm-12">
         <p class="footer-company-about">
             <span>Kênh liên hệ</span>
             Với mong muốn được phục vụ các khách hàng ngày càng chu đáo hơn, chúng tôi luôn sẵn sàng tiếp nhận và biết ơn mọi sự góp ý của khách hàng để ngày một hoàn thiện hơn.
@@ -23,11 +23,11 @@
 
     </div>
 
-    <div class="footer-center">
+    <div class="footer-center col-12 col-lg-4 col-md-4 col-sm-12">
 
         <div>
             <i class="fa fa-map-marker"></i>
-            <p style="font-size: 14px;"><span>17/13 Đường 51, Phường Hiệp Bình Chánh, Quận Thủ Đức</span> Thành phố Hồ Chí Minh, Việt Nam</p>
+            <p style="font-size: 14px;"><span>17/13 Đường 51, Phường Hiệp Bình Chánh</span> Quận Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam</p>
         </div>
 
         <div>
@@ -42,14 +42,17 @@
 
     </div>
 
-    <div class="footer-right">
+    <div class="footer-right col-12 col-lg-4 col-md-4 col-sm-12">
 
         <h3>Thông tin <span>Đăng ký</span></h3>
 
         <form action="#" th:action="@{/dang-ky}" th:object="${emailInfo}" method="post">
 
-            <input th:field="*{email}" type="text" name="email" placeholder="Email" required />
-            <input type="submit" value="Đăng ký" />
+			<div class="form-group">
+            <input class="form-control"  th:field="*{email}" type="text" name="email" placeholder="Email" required />
+            </div>
+           
+            <input type="submit" class="btn btn-light" value="Đăng ký" />
 
         </form>
 

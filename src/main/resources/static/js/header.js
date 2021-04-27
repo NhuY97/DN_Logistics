@@ -1,7 +1,6 @@
 var $ = jQuery.noConflict();
 
 $(document).ready(function() {
-    new WOW().init();
 
     $("#toggle-btn").click(function() {
         $(".sf-menu").slideToggle("slow");

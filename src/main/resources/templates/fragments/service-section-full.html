@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 </head>
-<body th:fragment="service-section">
+<body th:fragment="service-section-full">
 <div class="px-4 py-5 text-center">
     <h1 class="display-5 fw-bold">GIỚI THIỆU</h1>
     <div class="col-lg-6 mx-auto">
@@ -34,15 +34,11 @@
                 <div class="card-body">
                     <h4 class="card-title wow fadeInRight"><span style="color:#0FB3F2">THỦ TỤC</span> <span style="color:#CF3835">HẢI QUAN</span>
                     </h4>
-                    <p class="card-text" style="color:#272727;">
-                        Cung cấp dịch vụ khai Hải quan cho tất cả mặt hàng được cấp phép xuất nhập khẩu. Đặc biệt lợi thế trong các mặt hàng: Hoá chất, phụ gia thực phẩm, thực phẩm, thiết bị, máy móc công nghệ cao.
-                        <p class="collapse" id="service-1">
-                            Duy Nhân với đội ngũ nhân viên trẻ được đào tạo nghiệp vụ chuyên sâu, có nhiều kinh nghiệm xử lý tình huống trong ngành vận tải hàng hóa. Chúng tôi rất tự tin có thể cung cấp cho khách hàng dịch vụ khai thuê hải quan tốt nhất với thời gian thông quan nhanh nhất.
-                            <br />Tất cả tờ khai hải quan được kiểm soát bởi chuyên viên chứng từ hải quan trước khi truyền tờ khai chính thức. Chúng tôi luôn cập nhật tình trạng lô hàng một cách nhanh chóng, chính xác và kịp thời cho khách hàng qua điện thoại, email…trong suốt quá trình làm hải quan cho đến khi giao hàng.
-                            Bộ phận khai hải quan của chúng tôi rất sẵn sàng tư vấn cho khách hàng về thủ tục hải quan, mã HS, chứng từ xuất nhập khẩu cần thiết, hỗ trợ xin giấy phép của các cơ quan chuyên ngành, ấn định thuế và hoàn thuế….
-                        </p>
+                    <p class="card-text" style="color:#272727">Cung cấp dịch vụ khai Hải quan cho tất cả mặt hàng được cấp phép xuất nhập khẩu. Đặc biệt lợi thế trong các mặt hàng: Hoá chất, phụ gia thực phẩm, thực phẩm, thiết bị, máy móc công nghệ cao.
+                        Duy Nhân với đội ngũ nhân viên trẻ được đào tạo nghiệp vụ chuyên sâu, có nhiều kinh nghiệm xử lý tình huống trong ngành vận tải hàng hóa. Chúng tôi rất tự tin có thể cung cấp cho khách hàng dịch vụ khai thuê hải quan tốt nhất với thời gian thông quan nhanh nhất.
+                        <br />Tất cả tờ khai hải quan được kiểm soát bởi chuyên viên chứng từ hải quan trước khi truyền tờ khai chính thức. Chúng tôi luôn cập nhật tình trạng lô hàng một cách nhanh chóng, chính xác và kịp thời cho khách hàng qua điện thoại, email…trong suốt quá trình làm hải quan cho đến khi giao hàng.
+                        Bộ phận khai hải quan của chúng tôi rất sẵn sàng tư vấn cho khách hàng về thủ tục hải quan, mã HS, chứng từ xuất nhập khẩu cần thiết, hỗ trợ xin giấy phép của các cơ quan chuyên ngành, ấn định thuế và hoàn thuế….
                     </p>
-                    <a data-toggle="collapse" href="#service-1" role="button" aria-expanded="false" aria-controls="service-1"><small class="text-muted">Xem thêm</small></a>
                 </div>
             </div>
         </div>
@@ -62,7 +58,6 @@
                         </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#10050; Vận chuyển hàng quá tải, quá khổ (Open Top, Flat Rack…)
                         </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#10050; Gom hàng lẻ
                     </p>
-                    <a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
                 </div>
                 <div class="img-square-wrapper">
                     <img class="card-img"
@@ -90,7 +85,6 @@
                         Những mặt hàng nhạy cảm và có giá trị cao thường phải chịu áp lục rất lớn về thời gian cho tất cả các bên liên quan. <br />Chính vì vậy, Bộ phận vận tải bằng đường hàng không của chúng tôi cung cấp giá cước của nhiều hãng bay, hỗ trợ tìm kiếm sân bay và vận chuyển hàng quá khổ.
                         Dịch vụ bao gồm cả vận chuyển Express - Chuyển phát nhanh quốc tế. Chúng tôi sẽ đánh gía đúng yêu cầu của quý khách hàng và đảm bảo rằng quý công ty sẽ nhận được giải pháp vận chuyển hàng không hiệu quả nhất.
                     </p>
-                    <a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
                 </div>
             </div>
         </div>
@@ -134,7 +128,6 @@
                     <p class="card-text" style="color:#272727">Ngoài ra, Duy Nhân còn là đại lý hàng đông lạnh nhập khẩu cho các hãng thực phẩm lớn. Bằng đội ngũ nhân viên trẻ được đào tạo chuyên nghiệp, năng động đã có những bước phát triển không ngừng trong việc cung cấp các mặt hàng thực phẩm đông lạnh nhập khẩu tốt nhất, sạch nhất đến tận tay người tiêu dùng với các nhóm sản phẩm chính: Thịt bò, thịt heo, thịt gà...
                         <br />Vừa là công ty vận chuyển, cùng với CHÂM NGÔN Sức khỏe khách hàng là hàng đầu, mang lại cho khách hàng những thực phẩm bỗ dưỡng, đảm bảo vệ sinh an toàn thực phẩm cao nhất với giá thành tốt nhất và một dịch vụ giao hàng nhanh nhất.
                     </p>
-                    <a th:href="@{/service}"><small class="text-muted">Xem thêm</small></a>
                 </div>
             </div>
         </div>

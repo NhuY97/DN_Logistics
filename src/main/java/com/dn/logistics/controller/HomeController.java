@@ -3,7 +3,6 @@ package com.dn.logistics.controller;
 import com.dn.logistics.modal.EmailInfo;
 import com.dn.logistics.modal.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
@@ -29,6 +28,12 @@ public class HomeController {
         model.addAttribute("userInfo", new UserInfo());
         model.addAttribute("emailInfo", new EmailInfo());
         return "index";
+    }
+    
+    @GetMapping(value = {"/about-us"})
+    public String aboutUs(Model model) {
+        model.addAttribute("emailInfo", new EmailInfo());
+        return "about-us";
     }
 
     @PostMapping("/gui-bao-gia")

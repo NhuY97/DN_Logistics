@@ -3,8 +3,8 @@
 }
 .card {
     border: none;
-    border-radius: 0px;
-    border-bottom: 1px dotted #0c5460;
+    border-radius: 15px;
+    /*  border-bottom: 1px dotted #0c5460;*/
 }
 .card-horizontal {
     display: flex;
@@ -182,3 +182,18 @@ input:focus ~ .highlight {
     margin-top: 2.25rem;
     margin-bottom: 4.25rem;
 }
+.card-body a:not(.collapsed)  .more{display:none}
+.card-body a:not(.collapsed)  .less{display:inline-block}
+.card-body a.collapsed .less {display:none}
+.card-body a.collapsed .more {display:inline-block}
+.card-text {text-align: justify;}
+/* .row>div:nth-child(even)>.card {background-color: #fff}
+.row>div:nth-child(odd)>.card {
+	} */
+	
+.sv-container {
+	padding-top: 3px;
+	padding-bottom: 8px;
+	border-radius: 15px;
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(61,215,227,1) 100%);
+	}

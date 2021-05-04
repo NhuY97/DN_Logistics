@@ -27,14 +27,18 @@
 </div>
 
 <div th:if='${"2000" == sendEmailInfoResult}'>
-    <script>
-        alert("Đăng ký email thành công!")
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        alert([[#{alert.email.register.success}]])
+        /*]]>*/
     </script>
 </div>
 
 <div th:if='${sendEmailInfoResult != null && "2000" != sendEmailInfoResult}'>
-    <script>
-        alert("Đăng ký email thất bại!")
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        alert([[#{alert.email.register.fail}]])
+        /*]]>*/
     </script>
 </div>
 

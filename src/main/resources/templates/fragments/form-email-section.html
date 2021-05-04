@@ -5,7 +5,7 @@
 <body th:fragment="form-email-section">
 
 <div class="mt-5 mb-5 text-center">
-    <h1 class="display-5 fw-bold"><span>GỬI BÁO GIÁ</span></h1>
+    <h1 class="display-5 fw-bold"><span th:text="#{form.title}"></span></h1>
 </div>
 
     <div class="contact row justify-content-center">
@@ -16,7 +16,7 @@
                         <input type="text" th:field="*{name}" class="form-control" id="name" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
-                        <label>Name</label>
+                        <label th:text="#{form.name}"></label>
                     </div>
                     <div class="group form-group">
                         <input type="text" th:field="*{email}" class="form-control" id="email" pattern="^\S+@\S+$" required>
@@ -28,15 +28,15 @@
                         <input type="text" th:field="*{phone}" class="form-control" id="phone" name="phone" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
-                        <label>Phone</label>
+                        <label th:text="#{form.phone}"></label>
                     </div>
                     <div class="form-group group">
                         <div class="text-group">
                             <textarea id="textarea-msg" th:field="*{message}" required="required" class="form-control " rows="6"></textarea>
-                            <label for="textarea-msg" class="input-label">Message</label><i class="bar"></i>
+                            <label for="textarea-msg" class="input-label" th:text="#{form.msg}"></label><i class="bar"></i>
                         </div>
                     </div>
-                    <input type="submit" id="submit" name="submit" value="Send" class="btn btn-primary col-md-12 mb-5" />
+                    <input type="submit" id="submit" name="submit" th:value="#{form.send}" class="btn btn-primary col-md-12 mb-5" />
                 </form>
             </div>
         </div>
@@ -44,12 +44,12 @@
 
         <div class="col-md-5 col-sm-10">
             <div th:switch="${sendUserInfoResult}">
-                <h1 th:case="2000" class="align-content-center text-success">Quý khách vừa gửi báo giá thành công</h1>
-                <h1 th:case="1001" class="align-content-center text-warning">Quý khách vừa gửi dữ liệu sai định dạng, vui lòng kiểm tra và gửi lại!</h1>
-                <h1 th:case="1002" class="align-content-center text-warning">Hệ thống đang bảo trì, xin lỗi quý khách về sự bất tiện này!</h1>
-                <h1 th:case="*" class="align-content-center">Chúng tôi luôn mang tới sự hài lòng cho Quý khách hàng</h1>
+                <h1 th:case="2000" class="align-content-center text-success" th:text="#{form.notify.success}"></h1>
+                <h1 th:case="1001" class="align-content-center text-warning" th:text="#{form.notify.bad-format}"></h1>
+                <h1 th:case="1002" class="align-content-center text-warning" th:text="#{form.notify.error}"></h1>
+                <h1 th:case="*" class="align-content-center" th:text="#{form.right.title}"></h1>
             </div>
-            <p class="lead align-content-center">“Cám ơn Quý khách hàng đã quan tâm tới dịch vụ của DUY NHAN LOGISTICS. <br />Chúng tôi sẽ liên hệ lại Quý khách hàng trong thời gian sớm nhất. <br />Vui lòng liên hệ ngay với chúng tôi qua hotline: +84 906768646 qua Skype/Zalo để được tư vấn trực tiếp.”</p>
+            <p class="lead align-content-center" th:utext="#{form.right.content}"></p>
         </div>
     </div>
 

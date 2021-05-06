@@ -46,7 +46,7 @@
 
         <div>
             <i class="fa fa-envelope"></i>
-            <p><a href="mailto:sale2@company.com">sale2@dnlogistics.vn</a></p>
+            <p><a href="mailto:sale2@dnlogistics.vn">sale2@dnlogistics.vn</a></p>
         </div>
 
     </div>
@@ -58,7 +58,7 @@
         <form action="#" th:action="@{/dang-ky}" th:object="${emailInfo}" method="post">
 
 			<div class="form-group">
-            <input class="form-control"  th:field="*{email}" type="text" name="email" placeholder="Email" required />
+            <input class="form-control"  th:field="*{email}" type="text" name="email" pattern="^\S+@\S+$" placeholder="Email" required />
             </div>
            
             <input type="submit" class="btn btn-light" th:value="#{footer.form.submit}" />

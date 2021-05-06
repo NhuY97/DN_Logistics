@@ -49,7 +49,7 @@ public class HomeController {
 
             MimeMessageHelper helper = new MimeMessageHelper(message, multipart, "utf-8");
 
-            String htmlMsg = "<h3 style=\"color:#FF5733\">Customer information submitted from the website <a href=\"http://duynhanlogictisvn.com\">duynhanlogictisvn.com</a></h3>"
+            String htmlMsg = "<h3 style=\"color:#FF5733\">Customer information submitted from the website <a href=\"http://www.dnlogisticsvn.com\">www.dnlogisticsvn.com</a></h3>"
                     +"<div style=\"border: 1px solid #015F9C; border-radius:5px; padding:3px;\">" +
                     "<p><b>Name: </b>" + userInfo.getName() +"</p>" +
                     "<p><b>Email: </b>" + userInfo.getEmail() +"</p>" +
@@ -57,7 +57,7 @@ public class HomeController {
                     "<p><b>Message: </b>" + userInfo.getMessage() +"</p>" +
                     "</div>";
 
-            message.setContent(htmlMsg, "text/html");
+            message.setContent(htmlMsg, "text/html; charset=utf-8");
 
             helper.setTo(MAIL_TO);
 

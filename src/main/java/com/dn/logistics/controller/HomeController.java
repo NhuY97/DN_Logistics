@@ -89,7 +89,7 @@ public class HomeController {
 
             MimeMessageHelper helper = new MimeMessageHelper(message, multipart, "utf-8");
 
-            String htmlMsg = "<h3 style=\"color:#FF5733\">Customer register email from the website <a href=\"http://duynhanlogictisvn.com\">duynhanlogictisvn.com</a></h3>"
+            String htmlMsg = "<h3 style=\"color:#FF5733\">Customer register email from the website <a href=\"http://www.dnlogisticsvn.com\">www.dnlogisticsvn.com</a></h3>"
                     +"<div" +
                     "<p><b>Email: </b>" + emailInfo.getEmail() +"</p>" +
                     "</div>";

@@ -69,7 +69,7 @@ $(document).ready(function () {
 
 
     replay.on('click', function () {
-        location.reload(true);
+        window.location.href = "/#gui-bao-gia";
     });
 
 });

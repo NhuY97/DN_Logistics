@@ -7,7 +7,7 @@ public final class Constant {
 
 
     public static final String MAIL_FROM = "ytmonster97@gmail.com";
-    public static final String MAIL_TO = "nhuytnt1608@gmail.com";
+    public static final String MAIL_TO = "sale2@dnlogistics.vn";
 
     private Constant(){}
 

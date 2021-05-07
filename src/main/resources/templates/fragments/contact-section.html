@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body th:fragment="contact-section">
+
+<div class="px-4 py-5" style="background-color: #0f6674">
+    <div class="col-10 col-md-8 col-sm-10 col-lg-7 mx-auto" style="background-color: #fff; height: 40vh;    box-shadow: 2px 2px 2px #0f6674;
+    border-radius: 15px;">
+        <div id="block" style="
+    border-radius: 15px;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    width:90%;
+    height:100%;
+    -moz-opacity: 0.2;
+    opacity: 0.2;"
+             th:styleappend="'background-image: url(\'' + @{/assets/dn-logo-lg.jpg} +'\');'"></div>
+        <div id="text" style="position: absolute;padding: 15px; padding-left:20px; color: #005cbf">
+            <p class="mb-4 font-weight-bold" th:utext="#{contact.line1}"></p>
+            <p class="mb-4 font-weight-bold" th:utext="#{contact.line2}"></p>
+            <p class="mb-4 font-weight-bold" th:utext="#{contact.line3}"></p>
+            <p class="mb-4 font-weight-bold" th:utext="#{contact.line4}"></p>
+            <p class="mb-4 font-weight-bold" th:utext="#{contact.line5}"></p>
+            <p class="mb-4 font-weight-bold" th:utext="#{contact.line6}"></p>
+            <p class="mb-4 font-weight-bold" th:utext="#{contact.line7}"></p>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

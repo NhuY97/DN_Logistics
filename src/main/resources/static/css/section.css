@@ -5,6 +5,7 @@
     border: none;
     border-radius: 15px;
     /*  border-bottom: 1px dotted #0c5460;*/
+    box-shadow: 3px 3px 3px #00bcd4;
 }
 .card-horizontal {
     display: flex;
@@ -197,3 +198,11 @@ input:focus ~ .highlight {
 	border-radius: 15px;
 background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(61,215,227,1) 100%);
 	}
+
+.xanh {
+    color:#0FB3F2;
+}
+
+.do {
+    color:#CF3835;
+}

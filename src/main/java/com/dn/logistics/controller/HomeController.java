@@ -36,6 +36,19 @@ public class HomeController {
         return "about-us";
     }
 
+    @GetMapping(value = {"/services"})
+    public String services(Model model) {
+        model.addAttribute("emailInfo", new EmailInfo());
+        return "service";
+    }
+
+    @GetMapping(value = {"/contact"})
+    public String contact(Model model) {
+        model.addAttribute("userInfo", new UserInfo());
+        model.addAttribute("emailInfo", new EmailInfo());
+        return "contact";
+    }
+
     @PostMapping("/gui-bao-gia")
     public String sendUserInfo(@Valid @ModelAttribute("userInfo") UserInfo userInfo, BindingResult result, Model model) {
         if (result.hasErrors()) {

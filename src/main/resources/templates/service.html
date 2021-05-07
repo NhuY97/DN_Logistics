@@ -14,25 +14,21 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/header.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/section.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/footer.css}">
-        <link rel="stylesheet" type="text/css" th:href="@{/css/about-us.css}">
     <link rel="stylesheet" type="text/css" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css}">
     <link rel="stylesheet" type="text/css" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/animate.min.css}">
 </head>
 
 <body>
 
-<header th:insert="fragments/header.html :: header(1)"> </header>
+<header th:insert="fragments/header.html :: header(2)"> </header>
 
-<div class="container-fluid" th:insert="fragments/about-section.html :: about-section"> </div>
+<div class="container-fluid" th:insert="fragments/service-full-section.html :: service-full-section"> </div>
 
 <footer th:insert="fragments/footer.html :: footer"> </footer>
 
 <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
 <script th:src="@{/js/bootstrap.min.js}"></script>
 <script th:src="@{/js/header.js}"></script>
-<script th:src="@{/js/about.js}"></script>
-<script th:src="@{/js/wow.min.js}"></script>
 
 </body>
 
